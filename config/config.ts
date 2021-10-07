@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-09-03 14:17:07
- * @LastEditTime: 2021-09-27 14:52:40
+ * @LastEditTime: 2021-10-07 09:18:06
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \umiProject\config\config.ts
@@ -44,6 +44,7 @@ export default defineConfig({
   },
   fastRefresh: {},
 
+  // favicon: '/assets/favicon.ico',
   //服务代理
   // proxy: proxy[process.env.ENV || 'dev'],
   // mfsu: { production: { output: '.mfsu-production' } },
@@ -53,5 +54,5 @@ export default defineConfig({
   //   htmlSuffix: true,
   //   dynamicRoot: true,
   // },
-  ssr: {},
+  // ssr: {},
 });

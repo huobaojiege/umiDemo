@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-09-13 14:16:42
- * @LastEditTime: 2021-09-16 14:01:04
+ * @LastEditTime: 2021-09-28 10:10:41
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \umiProject\src\pages\user\login\index.tsx
@@ -19,6 +19,7 @@ const LoginPage: FC<LoginPageProps> = (props) => {
     });
     console.log('Success:', values, loginSystem);
   };
+  const dsa = 'weew';
 
   const onFinishFailed = (errorInfo: any) => {
     console.log('Failed:', errorInfo);
