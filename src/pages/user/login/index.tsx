@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-09-13 14:16:42
- * @LastEditTime: 2021-09-28 10:10:41
+ * @LastEditTime: 2021-10-07 10:48:38
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \umiProject\src\pages\user\login\index.tsx
@@ -10,7 +10,6 @@ import React, { FC } from 'react';
 import { Form, Input, Button, Checkbox } from 'antd';
 import { loginSystem } from '@/services/user/user';
 import styles from './index.less';
-
 type LoginPageProps = {};
 const LoginPage: FC<LoginPageProps> = (props) => {
   const onFinish = (values: any) => {
@@ -19,7 +18,6 @@ const LoginPage: FC<LoginPageProps> = (props) => {
     });
     console.log('Success:', values, loginSystem);
   };
-  const dsa = 'weew';
 
   const onFinishFailed = (errorInfo: any) => {
     console.log('Failed:', errorInfo);

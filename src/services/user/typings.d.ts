@@ -11,6 +11,7 @@ declare namespace API {
     title?: string;
     group?: string;
     tags?: { key?: string; label?: string }[];
+    options?: { [key: string]: any };
     notifyCount?: number;
     unreadCount?: number;
     country?: string;
