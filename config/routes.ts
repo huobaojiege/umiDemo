@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-09-03 14:11:41
- * @LastEditTime: 2021-09-14 11:54:10
+ * @LastEditTime: 2021-10-15 14:34:39
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \umiProject\config\router.ts
@@ -38,6 +38,12 @@ export default [
         path: '/contract/leaseContract',
         name: '租赁合同',
         component: '@/pages/contract/lease/index',
+      },
+      {
+        path: '/contract/leaseContract/detail',
+        name: '合同详情',
+        component: '@/pages/contract/lease/detail/index',
+        hideInMenu: true,
       },
       {
         path: '/contract/costContract',

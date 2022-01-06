@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-09-03 14:36:11
- * @LastEditTime: 2021-09-27 15:06:57
+ * @LastEditTime: 2021-10-20 09:30:35
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \umiProject\src\app.tsx
@@ -13,11 +13,16 @@ import {
   Settings as LayoutSettings,
 } from '@ant-design/pro-layout';
 
-
 export async function getInitialState() {
   return {
     ddddddddddd: 'ddddddddddd',
   };
+}
+
+export function onRouteChange({ routes, matchedRoutes, location, action }) {
+  // if (matchedRoutes.length) {
+  //   document.title = matchedRoutes[matchedRoutes.length - 1].route.title || '';
+  // }
 }
 export const layout = ({
   initialState,

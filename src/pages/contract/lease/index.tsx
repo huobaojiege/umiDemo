@@ -1,13 +1,16 @@
 /*
  * @Author: your name
  * @Date: 2021-09-13 13:49:15
- * @LastEditTime: 2021-09-24 14:06:51
+ * @LastEditTime: 2021-10-15 14:31:06
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \umiProject\src\pages\contract\lease\index.tsx
  */
 import React, { FC } from 'react';
+
 import { Table, Tag, Space } from 'antd';
+import { history } from 'umi';
+
 import styles from './index.less';
 type LeasePageProps = {
   // user: IndexModelState;
@@ -86,12 +89,17 @@ const LeaseContract: FC<LeasePageProps> = (props) => {
       ),
     },
   ];
+  const aClick = () => {
+    history.push('/contract/leaseContract/detail');
+  };
   return (
     <div className={styles.lease_div}>
       <h1>租赁合1同</h1>
       <div>
         <Table columns={tableColumns} dataSource={tableData} />
       </div>
+
+      <a onClick={() => aClick()}>跳转详情</a>
     </div>
   );
 };

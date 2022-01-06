@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-09-13 14:16:42
- * @LastEditTime: 2021-10-07 10:48:38
+ * @LastEditTime: 2021-10-20 09:25:40
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \umiProject\src\pages\user\login\index.tsx
@@ -13,9 +13,7 @@ import styles from './index.less';
 type LoginPageProps = {};
 const LoginPage: FC<LoginPageProps> = (props) => {
   const onFinish = (values: any) => {
-    loginSystem(values).then((res: any) => {
-      debugger;
-    });
+    loginSystem(values).then((res: any) => {});
     console.log('Success:', values, loginSystem);
   };
 

@@ -48,7 +48,6 @@ const LeaseContract: FC<CostPageProps> = (props) => {
       paginated: true,
     },
   );
-  console.log('????????????+++', data, loading, pagination);
   return (
     <div>
       <h1>成本1同</h1>

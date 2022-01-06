@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-09-09 18:48:41
- * @LastEditTime: 2021-09-14 09:26:47
+ * @LastEditTime: 2021-10-20 09:25:36
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \umiProject\src\pages\models\user.ts
@@ -34,9 +34,7 @@ const IndexModel: IndexModelType = {
   },
 
   effects: {
-    *query({ payload = {} }, { call, put, select }) {
-      debugger;
-    },
+    *query({ payload = {} }, { call, put, select }) {},
   },
   reducers: {
     save(state, action) {
@@ -52,7 +50,6 @@ const IndexModel: IndexModelType = {
   },
   subscriptions: {
     setup({ dispatch, history }) {
-
       return history.listen(({ pathname }) => {
         // debugger
         // if (pathname === '/') {
